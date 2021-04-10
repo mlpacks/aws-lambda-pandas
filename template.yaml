@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Pandas Lambda
+  
+  Provided by AWSLambdas.com
+
+Resources:
+  ApiGateway:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: lambda
+  PandasFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      Layers:
+        - PASTE HERE YOUR LAYER ARN
+      Events:
+        Pandas:
+          Type: Api
+          Properties:
+            Path: /pandas
+            Method: get
+            RestApiId: !Ref ApiGateway
+
+Outputs:
+  PandasApi:
+    Description: "API URL"
+    Value: !Sub "https://${ApiGateway}.execute-api.${AWS::Region}.amazonaws.com/lambda/pandas/"
+  PandasFunction:
+    Description: "Pandas Lambda Function ARN"
+    Value: !GetAtt PandasFunction.Arn
+  PandasFunctionIamRole:
+    Description: "Implicit IAM Role created for the Pandas Lambda"
+    Value: !GetAtt PandasFunctionRole.Arn
