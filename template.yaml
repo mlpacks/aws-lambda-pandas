@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: >
   Pandas Lambda
   
-  Provided by AWSLambdas.com
+  Provided by MLPacks.com
 
 Resources:
   ApiGateway:

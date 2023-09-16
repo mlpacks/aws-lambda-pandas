@@ -1,6 +1,6 @@
 # AWS Lambda with Pandas
 
-A demonstration project and template to deploy a AWS Lambda Function with Pandas, Numpy and SciPy based on the layers provided by [AWSLambdas.com](https://www.awslambdas.com).
+A demonstration project and template to deploy a AWS Lambda Function with Pandas, Numpy and SciPy based on the layers provided by [MLPacks.com](https://www.mlpacks.com).
 
 Pandas is a fast, powerful, flexible and easy to use data analysis and manipulation tool, that together with NumPy and SciPy are extensively used for Machine learning. On the other hand, the simplicity and cost-efficiency of Lambdas make it worthwhile to consider for certain use cases where Pandas, Numpy and SciPy are the go-to tools.
 
@@ -10,7 +10,7 @@ and the [AWS Serverless Application Model (SAM)](https://docs.aws.amazon.com/ser
 
 # Get a copy
 ```
-git clone https://github.com/AwsLambdas/aws-lambda-pandas.git
+git clone https://github.com/mlpacks/aws-lambda-pandas.git
 ```
 
 # Guide
@@ -21,7 +21,7 @@ git clone https://github.com/AwsLambdas/aws-lambda-pandas.git
 
 # <a name="one" id="one"></a>How to create a Pandas layer from AWS Lambdas GUI
 
-Our Panda's layer, which includes Numpy and SciPy as well, is available for purchasing in [AWSLambdas.com](https://www.awslambdas.com/layers/2/aws-lambda-pandas-numpy-scipy-python38-layer).
+Our Panda's layer, which includes Numpy and SciPy as well, is available for purchasing in [MLPacks.com](https://www.mlpacks.com/layers/2/aws-lambda-pandas-numpy-scipy-python38-layer).
 
 ![Place your Order to downlad or deploy the layer directly to AWS](img/buy-layer.png)
 
@@ -35,7 +35,7 @@ Click the button "Create Layer", and your layer will be created in a few seconds
 
 # <a name="two" id="two"></a>How to create a Pandas layer from a zip file
 
-Our Panda's layer, which includes Numpy and SciPy as well, is available for purchasing in [AWSLambdas.com](https://www.awslambdas.com/layers/2/aws-lambda-pandas-numpy-scipy-python38-layer).
+Our Panda's layer, which includes Numpy and SciPy as well, is available for purchasing in [MLPacks.com](https://www.mlpacks.com/layers/2/aws-lambda-pandas-numpy-scipy-python38-layer).
 
 Right after the payment, you will be able to click the "Download" button. Then, copy the zip file to your project clone's root directory.
 
